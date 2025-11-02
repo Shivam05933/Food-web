@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Élan Bites — Luxury One Page</title>
+  <meta name="description" content="Élan Bites — luxury food. One-page responsive front-end using HTML & CSS.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img class="logo" src="./images/logo.png" alt="Bhartruhari Flavours">
+        <span class="brand-text">Bhartruhari Flavours</span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#features">Features</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#payment">Payment</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <select class="nav-select" aria-label="Jump to section" onchange="if(this.value) location.href=this.value">
+        <option value="">Menu</option>
+        <option value="#home">Home</option>
+        <option value="#menu">Menu</option>
+        <option value="#features">Features</option>
+        <option value="#delivery">Delivery</option>
+        <option value="#payment">Payment</option>
+        <option value="#contact">Contact</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- ===== HERO / HOME ===== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-left">
+        <h1>Indulgence. Curated.</h1>
+        <p class="lead">Fine-dining inspired dishes, delivered to your home with care and luxury.</p>
+        <div>
+          <a class="btn btn--gold" href="#menu">Explore Menu</a>
+          <a class="btn btn--ghost" href="#contact">Contact Us</a>
+        </div>
+        <div class="hero-features">
+          <div class="hf"><strong>Fresh</strong><span class="muted">Seasonal ingredients</span></div>
+          <div class="hf"><strong>Timely</strong><span class="muted">Temperature-controlled</span></div>
+          <div class="hf"><strong>Premium</strong><span class="muted">Chef-crafted plates</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Place image: images/menu-1.jpg (signature dish) -->
+        <img src="https://i.pinimg.com/736x/f7/23/38/f72338208425ee93d1a17a222615ad92.jpg" alt="Signature Dish">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN / MENU ===== -->
+  <section id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="lead">Curated dishes for the refined palate — seasonal, plated with care.</p>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="https://i.pinimg.com/736x/f7/23/38/f72338208425ee93d1a17a222615ad92.jpg" alt="Dish 1">
+          <div class="body">
+            <h4>Truffle Risotto</h4>
+            <p class="muted">Silky arborio rice, black truffle butter, pecorino.</p>
+            <div class="meta"><span class="price">₹880</span><a class="btn btn--gold" href="#payment">Order</a></div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://png.pngtree.com/thumb_back/fh260/background/20250319/pngtree-close-up-of-a-delicious-pizza-slice-with-tomatoes-and-olives-image_17092841.jpg" alt="Dish 2">
+          <div class="body">
+            <h4>Seared Salmon</h4>
+            <p class="muted">Honey glaze, citrus beurre blanc.</p>
+            <div class="meta"><span class="price">₹420</span><a class="btn btn--gold" href="#payment">Order</a></div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://i.pinimg.com/736x/a6/c6/12/a6c612d0afb0db8e483bd1449b66cdaf.jpg" alt="Dish 3">
+          <div class="body">
+            <h4>Herb-crusted Lamb</h4>
+            <p class="muted">Slow-roasted, rosemary jus.</p>
+            <div class="meta"><span class="price">₹680</span><a class="btn btn--gold" href="#payment">Order</a></div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://ellegourmet.ca/wp-content/uploads/2023/12/hawskworth-chocolate-orange.jpg" alt="Dish 4">
+          <div class="body">
+            <h4>Molten Chocolate</h4>
+            <p class="muted">Warm centre, edible gold dust.</p>
+            <div class="meta"><span class="price">₹320</span><a class="btn btn--gold" href="#payment">Order</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Bhartruhari Flavours</h2>
+      <p class="lead">A balance of taste, technique and trust.</p>
+
+      <div class="features-grid">
+        <div class="feature">
+          <div class="icon"><img class="feature-img" src="./images/icon-fresh.png" alt=""></div>
+          <h4>Chef-curated</h4>
+          <p class="muted">Recipes created by experienced chefs.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><img  class="feature-img" src="./images/icon-quality.png" alt=""></div>
+          <h4>Premium Packaging</h4>
+          <p class="muted">Presentation preserved during delivery.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><img class="feature-img" src="./images/icon-fast.png" alt=""></div>
+          <h4>Reliable Delivery</h4>
+          <p class="muted">Real-time tracking & partners you can trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DELIVERY ===== -->
+  <section id="delivery">
+    <div class="container">
+      <h2 class="section-title">Delivery</h2>
+      <p class="lead">Safe, fast and temperature-controlled.</p>
+
+      <div class="delivery-wrap">
+        <div>
+          <h3>How it works</h3>
+          <ol class="steps">
+            <li><strong>Choose</strong><span class="muted">Select your favourite dishes</span></li>
+            <li><strong>Prepare</strong><span class="muted">Chef plates with care</span></li>
+            <li><strong>Deliver</strong><span class="muted">Track until arrival</span></li>
+          </ol>
+        </div>
+        <div>
+          <!-- delivery illustration -->
+          <img src="https://cdn.dribbble.com/userupload/24660734/file/original-c6e76b6cf8fd136dc7de6c3939620e84.png?resize=400x0" alt="Delivery map or illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAYMENT ===== -->
+  <section id="payment">
+    <div class="container">
+      <h2 class="section-title">Payment</h2>
+      <p class="lead">Secure payments with all major cards and wallets.</p>
+
+      <div class="payment-grid">
+        <div class="payment-box">
+          <h3 class="muted">Checkout (Demo)</h3>
+          <p class="muted">This is a static front-end. Integrate your payment gateway for live payments.</p>
+          <div style="margin-top:1rem">
+            <label class="muted">Name on card</label>
+            <input placeholder="Full name" />
+          </div>
+          <div style="margin-top:0.6rem">
+            <label class="muted">Card number</label>
+            <input placeholder="1234 5678 9012 3456" />
+          </div>
+          <div style="display:flex; gap:0.6rem; margin-top:0.6rem">
+            <div style="flex:1">
+              <label class="muted">Expiry</label>
+              <input placeholder="MM/YY" />
+            </div>
+            <div style="width:120px">
+              <label class="muted">CVC</label>
+              <input placeholder="CVC" />
+            </div>
+          </div>
+
+          <div style="margin-top:1rem; display:flex; gap:0.6rem; align-items:center">
+            <a class="btn btn--gold" href="#contact">Pay ₹1,380</a>
+            <div class="pay-icons muted" style="margin-left:auto"> 
+              <!-- optional image: images/payment.jpg -->
+              <img src="https://cdn-icons-png.flaticon.com/512/2400/2400225.png" alt="payment icons">
+            </div>
+          </div>
+        </div>
+
+        <aside class="payment-box">
+          <h4>Order Summary</h4>
+          <ul style="list-style:none; padding:0; margin-top:0.8rem">
+            <li style="display:flex; justify-content:space-between; padding:0.5rem 0"><span>Truffle Risotto</span><strong>₹880</strong></li>
+            <li style="display:flex; justify-content:space-between; padding:0.5rem 0"><span>Molten Chocolate</span><strong>₹320</strong></li>
+            <li style="border-top:1px solid rgba(255,255,255,0.03); padding-top:0.6rem; display:flex; justify-content:space-between; padding:0.6rem 0"><strong>Total</strong><strong>₹1,200</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="lead">Questions? Catering inquiries? Reach out and we'll get back to you.</p>
+
+      <div class="contact-card">
+        <form class="contact-form">
+          <label class="muted">Name</label>
+          <input placeholder="Your name" />
+          <label class="muted" style="margin-top:0.6rem">Email</label>
+          <input placeholder="you@example.com" />
+          <label class="muted" style="margin-top:0.6rem">Message</label>
+          <textarea rows="6" placeholder="Tell us about your requirement"></textarea>
+          <div style="margin-top:0.8rem">
+            <a class="btn btn--gold" href="#">Send Message</a>
+          </div>
+        </form>
+
+        <aside class="payment-box">
+          <h4>Visit Us</h4>
+          <p class="muted">123 Gourmet Lane, Food District, City</p>
+          <h4 style="margin-top:1rem">Hours</h4>
+          <p class="muted">Mon–Sun: 11:00 — 22:00</p>
+          <h4 style="margin-top:1rem">Phone</h4>
+          <p class="muted">+91 98765 43210</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--gold-2);">Bhartruhari Flavours</strong>
+        <p class="muted">Luxury food delivery & catering</p>
+      </div>
+      <div class="center muted">© <span id="year">2025</span> — All rights reserved</div>
+      <div class="center muted">Follow: Instagram • Facebook • Twitter</div>
+    </div>
+  </footer>
+
+</body>
+</html>
