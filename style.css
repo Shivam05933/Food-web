@@ -131,6 +131,7 @@
       .hero{min-height:64vh}
       .features-grid{grid-template-columns:1fr}
       .hero-features{display: flex; flex-direction: column;}
+      .footer-inner{display: flex; flex-direction: column;}
     }
 
     /* small niceties */
