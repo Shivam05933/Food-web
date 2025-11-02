@@ -119,6 +119,7 @@
       .delivery-wrap{grid-template-columns:1fr}
       .payment-grid{grid-template-columns:1fr}
       .contact-card{grid-template-columns:1fr}
+      
     }
     @media (max-width:700px){
       .nav-select{display:block}
@@ -129,6 +130,7 @@
       .hero-left p.lead{font-size:0.95rem}
       .hero{min-height:64vh}
       .features-grid{grid-template-columns:1fr}
+      .hero-features{display: flex; flex-direction: column;}
     }
 
     /* small niceties */
